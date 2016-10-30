@@ -1,0 +1,19 @@
+{
+  "name": "learning-nodejs",
+  "version": "1.0.0",
+  "description": "This is a learning website",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Kennytian/learning-nodejs.git",
+    "type": "git"
+  },
+  "author": "Kenny Tian",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "moment": "^2.15.1",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.3"
+  }
+}
