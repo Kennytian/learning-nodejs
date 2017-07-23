@@ -1,0 +1,91 @@
+## MySQL 笔记
+
+### 2017-07-18
+
+#### 配置 MySql 环境
+```
+sudo vim ~/.bash_profile
+export PATH=${PATH}:/usr/local/mysql/bin
+source ~/.bash_profile
+```
+
+#### 在命令行登录 MySql
+>mysql -uroot -pa22222
+
+#### Mac 卸载MySQL
+>通过下面命令删除干净MySQL，同时在进入 系统偏好设置 里面删除 MySQL 的图标的设置项，点击右键会弹出 移除MySQL偏好设置面板
+
+```
+sudo rm -rf /usr/local/mysql*
+sudo rm -rf /Library/StartupItems/MySQLCOM
+sudo rm -rf /Library/PreferencePanes/My*
+sudo rm -rf /Library/Receipts/mysql*
+sudo rm -rf /Library/Receipts/MySQL*
+sudo rm -rf /var/db/receipts/com.mysql.*
+vi /Library/Receipts/InstallHistory.plist # 进入搜素 mysql , “shif+:” 输入mysql
+
+find / -name mysql -print 2> /dev/null
+sudo find / | grep -i mysql
+
+```
+
+#### 表名设置为大写
+>将表名设置为大写，要重启服务器才生效。lower_case_table_names=0
+
+### 2014/04/13 16:51
+使用整数数据的精确数字数据类型。
+##### bigint
+>从 -2^63 (-9223372036854775808) 到 2^63-1 (9223372036854775807) 的整型数据（所有数字）。存储大小为 8 个字节。
+P.S. bigint已经有长度了，在mysql建表中的length，只是用于显示的位数
+##### int
+>从 -2^31 (-2,147,483,648) 到 2^31 – 1 (2,147,483,647) 的整型数据（所有数字）。存储大小为 4 个字节。int 的 SQL-92 同义字为 integer。
+##### smallint
+>从 -2^15 (-32,768) 到 2^15 – 1 (32,767) 的整型数据。存储大小为 2 个字节。
+##### tinyint
+>从 0 到 255 的整型数据。存储大小为 1 字节。
+
+>mysql alter 语句用法,添加、修改、删除字段等
+
+##### 主键
+>alter table tabelname add new_field_id int(5) unsigned default 0 not null auto_increment ,add primary key (new_field_id);
+
+##### 增加一个新列
+1. alter table t2 add d timestamp;
+2. alter table infos add ex tinyint not null default '0';
+
+##### 删除列
+> alter table t2 drop column c;
+
+##### 重命名列
+> alter table t1 change a b integer;
+
+##### 改变列的类型
+alter table t1 change b b bigint not null;
+alter table infos change list list tinyint not null default '0';
+
+##### 重命名表
+> alter table t1 rename t2;
+
+##### 加索引
+1. mysql> alter table tablename change depno depno int(5) not null;
+2. mysql> alter table tablename add index 索引名 (字段名1[，字段名2 …]);
+3. mysql> alter table tablename add index emp_name (name);
+
+##### 加主关键字的索引
+1. mysql> alter table tablename add primary key(id);
+
+##### 加唯一限制条件的索引
+1. mysql> alter table tablename add unique emp_name2(cardnumber);
+
+##### 删除某个索引
+mysql>alter table tablename drop index emp_name;
+
+##### 修改表：
+##### 增加字段：
+1. mysql> ALTER TABLE table_name ADD field_name field_type;
+
+##### 修改原字段名称及类型：
+1. mysql> ALTER TABLE table_name CHANGE old_field_name new_field_name field_type;
+
+##### 删除字段：
+1. mysql> ALTER TABLE table_name DROP field_name; 
