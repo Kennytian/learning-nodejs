@@ -19,7 +19,7 @@
 #### 安装：
 > `yarn global add uglify-js` / `npm install -g uglify-js`
 
-##### 用法：
+#### 用法：
 最简单用法：
 > `uglifyjs index.js -m -c -o index.min.js`
 * -m 打乱命名
