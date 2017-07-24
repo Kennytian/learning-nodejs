@@ -15,5 +15,8 @@
     "moment": "^2.15.1",
     "mongodb": "^2.2.10",
     "mongoose": "^4.6.3"
+  },
+  "devDependencies": {
+    "webpack": "^3.3.0"
   }
 }

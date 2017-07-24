@@ -1,7 +1,10 @@
 ## MySQL 笔记
 
-### 2017-07-18
+### 2017-07-24
+#### 导入数据库
+>mysql -hlocalhost -uroot -pa22222 **basic_db** < /Users/kenny/Downloads/dump/basic.dump
 
+### 2017-07-18
 #### 配置 MySql 环境
 ```
 sudo vim ~/.bash_profile

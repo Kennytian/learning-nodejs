@@ -14,7 +14,7 @@
 
 ### 2017-07-23
 #### JS 压缩与混淆
->JavaScript parser / mangler / compressor / beautifier toolkit http://lisperator.net/uglifyjs/
+>JavaScript parser / mangler / compressor / beautifier toolkit https://github.com/mishoo/UglifyJS2
 
 #### 安装：
 > `yarn global add uglify-js` / `npm install -g uglify-js`
