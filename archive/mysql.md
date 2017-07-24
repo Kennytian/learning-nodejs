@@ -4,6 +4,19 @@
 #### 导入数据库
 >mysql -hlocalhost -uroot -pa22222 **basic_db** < /Users/kenny/Downloads/dump/basic.dump
 
+>导入同事Z导出的数据库 sql 脚本时，报如下错误：
+_[HY000][1031] Table storage engine for 'anchor' doesn't have this option_
+
+>部分表能导入，部分表无法正常导入，经查阅国外资料，得出简单粗暴的解决方法：
+
+>将语句中的 ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 **ROW_FORMAT=FIXED**; 删除即可(Removing ROW_FORMAT=FIXED option)。
+
+参考文档：
+* https://magento.stackexchange.com/questions/94325/how-to-fix-mysql-error-1031
+* https://dba.stackexchange.com/questions/133026/error-1031-hy000-at-line-x-table-storage-engine-for-tbl-doesnt-have-this-o
+
+
+
 ### 2017-07-18
 #### 配置 MySql 环境
 ```
