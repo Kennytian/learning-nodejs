@@ -1,15 +1,15 @@
 ### webpack 第二课
 
-##### package.json
+#### 1 package.json
 > `yarn add style-loader css-loader --dev`
 
 ```
 "scripts": {
-    "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js"
+    "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js"
 }
 ```
 
-##### ./dist/index.html
+#### 2 ./dist/index.html
 ```html
 <html>
 <head>
@@ -21,7 +21,7 @@
 </html>
 ```
 
-##### ./src/index.js
+#### 3 ./src/index.js
 ```js
 import _ from 'lodash';
 import './style.css';
@@ -36,14 +36,14 @@ function component() {
 document.body.appendChild(component());
 ```
 
-##### ./src/style.css
+#### 4 ./src/style.css
 ```css
 .hello {
     color: red;
 }
 ```
 
-##### ./webpack.config.js
+#### 5 ./webpack.config.js
 ```js
 let path = require('path');
 
@@ -67,7 +67,7 @@ const cfg = {
 module.exports = cfg;
 ```
 
-##### 运行命令
+#### 运行命令
 > yarn run lesson2
 
 就会看到如下效果：

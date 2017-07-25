@@ -1,6 +1,6 @@
 ### webpack 第一课
 
-##### package.json
+#### 1 package.json
 > `yarn add lodash`
 
 > `yarn add webpack --dev`
@@ -11,7 +11,7 @@
 }
 ```
 
-##### ./dist/index.html
+#### 2 ./dist/index.html
 ```html
 <html>
 <head>
@@ -23,7 +23,7 @@
 </html>
 ```
 
-##### ./src/index.js
+#### 3 ./src/index.js
 ```js
 import _ from 'lodash';
 
@@ -36,7 +36,7 @@ function component() {
 document.body.appendChild(component());
 ```
 
-##### ./webpack.config.js
+#### 4 ./webpack.config.js
 ```js
 const path = require('path');
 
@@ -51,7 +51,7 @@ const cfg = {
 module.exports = cfg;
 ```
 
-##### 运行命令
+#### 运行命令
 > yarn run lesson1
 
 就会看到如下效果：
