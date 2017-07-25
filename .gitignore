@@ -41,3 +41,6 @@ jspm_packages
 .idea/
 website/db
 .DS_Store
+
+*bundle.js
+

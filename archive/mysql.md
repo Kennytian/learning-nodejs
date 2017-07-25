@@ -9,7 +9,7 @@ _[HY000][1031] Table storage engine for 'anchor' doesn't have this option_
 
 >部分表能导入，部分表无法正常导入，经查阅国外资料，得出简单粗暴的解决方法：
 
->将语句中的 ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 **ROW_FORMAT=FIXED**; 删除即可(Removing ROW_FORMAT=FIXED option)。
+>例如： ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED; 只需删除语句中的**ROW_FORMAT=FIXED**即可(Removing ROW_FORMAT=FIXED option)。
 
 参考文档：
 * https://magento.stackexchange.com/questions/94325/how-to-fix-mysql-error-1031
