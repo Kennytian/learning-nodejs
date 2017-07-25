@@ -42,5 +42,9 @@ jspm_packages
 website/db
 .DS_Store
 
-*bundle.js
+/webpack/lesson1/dist/*.*
+!/webpack/lesson1/dist/*.html
+
+/webpack/lesson2/dist/*.*
+!/webpack/lesson2/dist/*.html
 
