@@ -10,7 +10,8 @@
   "author": "Kenny Tian",
   "license": "MIT",
   "scripts": {
-    "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson1/webpack.config.js"
+    "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson1/webpack.config.js",
+    "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js"
   },
   "dependencies": {
     "ejs": "^2.5.2",
@@ -21,6 +22,8 @@
     "mongoose": "^4.6.3"
   },
   "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
     "webpack": "^3.3.0"
   }
 }

@@ -1,4 +1,4 @@
-#### webpack 第一课
+### webpack 第一课
 
 ##### package.json
 > `yarn add lodash`
