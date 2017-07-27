@@ -1,7 +1,9 @@
 ### webpack 第二课
 
 #### 1 package.json
-> `yarn add style-loader css-loader file-loader --dev`
+> `yarn add lodash`
+
+> `yarn add webpack style-loader css-loader file-loader --dev`
 
 ```
 "scripts": {
