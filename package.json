@@ -17,6 +17,7 @@
     "lesson5": "webpack --config ./webpack/lesson5/webpack.config.js",
     "lesson6": "webpack --config ./webpack/lesson6/webpack.config.js",
     "start6": "webpack-dev-server --open",
+    "watch6": "webpack --watch",
     "lesson7": "webpack --config ./webpack/lesson7/webpack.config.js",
     "lesson8": "webpack --config ./webpack/lesson8/webpack.config.js",
     "lesson9": "webpack --config ./webpack/lesson9/webpack.config.js",

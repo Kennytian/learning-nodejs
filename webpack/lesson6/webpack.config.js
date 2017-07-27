@@ -16,7 +16,7 @@ const cfg = {
       exclude: ['*.html']
     }),
     new HtmlWebpackPlugin({
-      title: 'Output Management v3'
+      title: 'Development'
     })
   ],
   output: {

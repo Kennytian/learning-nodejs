@@ -8,6 +8,8 @@
 ```
 "scripts": {
     "lesson6": "./node_modules/.bin/webpack --config ./webpack/lesson6/webpack.config.js"
+    "start6": "webpack-dev-server --open",
+    "watch6": "webpack --watch"
 }
 ```
 
@@ -17,7 +19,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Output Management v2</title>
+    <title>Development</title>
   </head>
   <body>
   <script type="text/javascript" src="app.bundle.js"></script><script type="text/javascript" src="print.bundle.js"></script></body>
@@ -63,12 +65,16 @@ const cfg = {
     app: './webpack/lesson6/src/index.js',
     print: './webpack/lesson6/src/print.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase:'./dist/'
+  },
   plugins: [
     new CleanWebpackPlugin(['dist'], {
       exclude: ['*.html']
     }),
     new HtmlWebpackPlugin({
-      title: 'Output Management v2'
+      title: 'Development'
     })
   ],
   output: {
