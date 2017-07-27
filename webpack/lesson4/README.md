@@ -1,4 +1,4 @@
-### webpack 第三课
+### webpack 第四课
 
 #### 1 package.json
 > `yarn add lodash`
@@ -25,7 +25,7 @@
 </html>
 ```
 
-#### 4 ./src/index.js
+#### 3 ./src/index.js
 ```js
 import _ from 'lodash';
 import printMe from './print';
@@ -46,14 +46,14 @@ function component() {
 document.body.appendChild(component());
 ```
 
-#### 5 ./src/print.js
+#### 4 ./src/print.js
 ```js
 export default function printMe() {
   console.log('print.js 调用我')
 }
 ```
 
-#### 6 ./webpack.config.js
+#### 5 ./webpack.config.js
 ```js
 let path = require('path');
 
