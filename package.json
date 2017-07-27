@@ -11,7 +11,8 @@
   "license": "MIT",
   "scripts": {
     "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson1/webpack.config.js",
-    "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js"
+    "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js",
+    "lesson3": "./node_modules/.bin/webpack --config ./webpack/lesson3/webpack.config.js"
   },
   "dependencies": {
     "ejs": "^2.5.2",
@@ -23,8 +24,10 @@
   },
   "devDependencies": {
     "css-loader": "^0.28.4",
+    "csv-loader": "^2.1.1",
     "file-loader": "^0.11.2",
     "style-loader": "^0.18.2",
-    "webpack": "^3.3.0"
+    "webpack": "^3.3.0",
+    "xml-loader": "^1.2.1"
   }
 }
