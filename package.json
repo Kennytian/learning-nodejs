@@ -12,7 +12,8 @@
   "scripts": {
     "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson1/webpack.config.js",
     "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js",
-    "lesson3": "./node_modules/.bin/webpack --config ./webpack/lesson3/webpack.config.js"
+    "lesson3": "./node_modules/.bin/webpack --config ./webpack/lesson3/webpack.config.js",
+    "lesson4": "./node_modules/.bin/webpack --config ./webpack/lesson4/webpack.config.js"
   },
   "dependencies": {
     "ejs": "^2.5.2",
