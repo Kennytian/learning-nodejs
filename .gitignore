@@ -55,17 +55,12 @@ website/db
 !/webpack/lesson4/dist/*.html
 
 /webpack/lesson5/dist/*.*
-!/webpack/lesson5/dist/*.html
 
 /webpack/lesson6/dist/*.*
-!/webpack/lesson6/dist/*.html
 
 /webpack/lesson7/dist/*.*
-!/webpack/lesson7/dist/*.html
 
 /webpack/lesson8/dist/*.*
-!/webpack/lesson8/dist/*.html
 
 /webpack/lesson9/dist/*.*
-!/webpack/lesson9/dist/*.html
 

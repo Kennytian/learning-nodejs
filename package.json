@@ -10,16 +10,17 @@
   "author": "Kenny Tian",
   "license": "MIT",
   "scripts": {
-    "lesson1": "./node_modules/.bin/webpack --config ./webpack/lesson1/webpack.config.js",
-    "lesson2": "./node_modules/.bin/webpack --config ./webpack/lesson2/webpack.config.js",
-    "lesson3": "./node_modules/.bin/webpack --config ./webpack/lesson3/webpack.config.js",
-    "lesson4": "./node_modules/.bin/webpack --config ./webpack/lesson4/webpack.config.js",
-    "lesson5": "./node_modules/.bin/webpack --config ./webpack/lesson5/webpack.config.js",
-    "lesson6": "./node_modules/.bin/webpack --config ./webpack/lesson6/webpack.config.js",
-    "lesson7": "./node_modules/.bin/webpack --config ./webpack/lesson7/webpack.config.js",
-    "lesson8": "./node_modules/.bin/webpack --config ./webpack/lesson8/webpack.config.js",
-    "lesson9": "./node_modules/.bin/webpack --config ./webpack/lesson9/webpack.config.js",
-    "lesson10": "./node_modules/.bin/webpack --config ./webpack/lesson10/webpack.config.js"
+    "lesson1": "webpack --config ./webpack/lesson1/webpack.config.js",
+    "lesson2": "webpack --config ./webpack/lesson2/webpack.config.js",
+    "lesson3": "webpack --config ./webpack/lesson3/webpack.config.js",
+    "lesson4": "webpack --config ./webpack/lesson4/webpack.config.js",
+    "lesson5": "webpack --config ./webpack/lesson5/webpack.config.js",
+    "lesson6": "webpack --config ./webpack/lesson6/webpack.config.js",
+    "start6": "webpack-dev-server --open",
+    "lesson7": "webpack --config ./webpack/lesson7/webpack.config.js",
+    "lesson8": "webpack --config ./webpack/lesson8/webpack.config.js",
+    "lesson9": "webpack --config ./webpack/lesson9/webpack.config.js",
+    "lesson10": "webpack --config ./webpack/lesson10/webpack.config.js"
   },
   "dependencies": {
     "ejs": "^2.5.2",
@@ -37,6 +38,7 @@
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
     "xml-loader": "^1.2.1"
   }
 }
