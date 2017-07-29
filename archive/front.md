@@ -33,24 +33,6 @@ location / {
 8. 检查 conf 文件 `nginx -t/T`
 9. 更多命令 `nginx -h`
 
-### 2017-07-20
-#### 运行 redis
-0. 安装redis `brew install redis`
-1. 前台运行 `redis-server /usr/local/etc/redis.conf`
-2. 后台运行 `brew services start redis`
-3. 重启服务 `brew services restart redis`
-4. 删除 redis `brew uninstall --force redis`
-
-#### 基本知识
-1. redis 默认占用 6379 端口，修改 conf 文件 `vim /usr/local/etc/redis.conf`
-2. 启动客户端，执行：`redis-cli`
-3. 测试 `redis` 执行效果: `select 0`, `keys *`
-4. 退出客户端，执行：`127.0.0.1:6379>showdown` 
-
-#### 基本命令
-1. 切换数据库：`select 0 / select 1 / select 2`  
-2. 查询数据: `get sess:f3106ccb4a1146f8e4ceff3d63cc7462f2ebcdfa`
-
 ### 2017-07-10
 1. 在 `WebStorm + nodemon` 调试，需配置为：`/usr/local/bin/nodemon --exec /usr/local/bin/node`
 
