@@ -20,6 +20,7 @@
 3. 查询数据: `get mykey`
 4. 清除密码：`CONFIG SET requirepass ""`
 5. 设置密码: `CONFIG SET requirepass "abc123"`
+6. 有效期数据：`client.set('key10s', 'value!', 'EX', 10);`
 
 ### redis 第二课
 #### 1 package.json
