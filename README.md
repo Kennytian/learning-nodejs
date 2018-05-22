@@ -6,6 +6,8 @@
 
 * [MySQL 学习](./archive/mysql.md) 
 
+* [Redis 学习](./archive/redis.md) 
+
 * [前端周边知识](./archive/front.md) 
 
 * [知识归档](./archive/history.md) 
