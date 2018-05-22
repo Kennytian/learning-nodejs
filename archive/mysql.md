@@ -1,5 +1,57 @@
 ## MySQL 笔记
 
+### 2018-04-21
+#### Mac上安装MySQL后，无法登录
+1、关闭MySQL服务；
+
+`
+sudo /usr/local/mysql/support-files/mysql.server stop
+`
+
+2.进入安全模式
+
+```
+cd /usr/local/mysql/bin/
+sudo su
+./mysqld_safe --skip-grant-tables &
+```
+
+3.新建一个终端，输入
+
+```
+mysql -u root -p
+```
+
+4.修改root用户密码
+
+```
+UPDATE mysql.user SET authentication_string=PASSWORD('root') where User='root';
+```
+
+5.刷新权限，使配置生效
+
+```
+flush privileges;
+```
+
+6.重启Mysql服务
+
+```
+sudo /usr/local/mysql/support-files/mysql.server start
+```
+
+7.再登录
+
+```
+mysql -u root -proot
+```
+
+8.重新设置密码。
+
+```
+SET PASSWORD = PASSWORD('root');
+```
+
 ### 2017-07-24
 #### 导入数据库
 >mysql -hlocalhost -uroot -pa22222 **basic_db** < /Users/kenny/Downloads/dump/basic.dump
