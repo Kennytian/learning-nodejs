@@ -6,6 +6,8 @@
 
 * [MySQL 学习](./archive/mysql.md) 
 
+* [Sequelize 学习](./archive/sequelize.md) 
+
 * [Redis 学习](./archive/redis.md) 
 
 * [前端周边知识](./archive/front.md) 
