@@ -7,6 +7,16 @@
 ## Model Definition 定义模型
 ### Configuration 配置
 
+- timestamps
+```javascript
+const Bar = sequelize.define('bar', { /* bla */ }, {
+  // don't add the timestamp attributes (updatedAt, createdAt)
+  timestamps: false,
+}
+```
+
+`timestamps: false` 表示不添加 updatedAt, createdAt 字段到数据库中
+
 - freezeTableName
 
 freezeTableName 值默认是false。但当我们想创建一个 `wbUser` 表时，Sequelize会自动帮我们改为wbUsers；创建 user 表，就会自动改为 users 表，为了避免这种情况。
