@@ -1,5 +1,9 @@
 ## MySQL 笔记
 
+### 2018-5-29
+
+1. `utf8mb4` 专门用来兼容四字节的 unicode，`utf8mb4` 是utf8的超集。比如可以直接用 utf8mb4 来存储 emoji 表情。
+
 ### 2018-04-21
 #### Mac上安装MySQL后，无法登录
 1、关闭MySQL服务；
