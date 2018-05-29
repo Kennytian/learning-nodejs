@@ -1,5 +1,17 @@
 ## Docker 笔记
 
+### 2018-05-25
+安装MySQL
+
+```
+docker run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD="yes" mysql:5.7
+```
+
+连接Docker里的MySQL
+```
+mysql -uroot -h127.0.0.1 -P3306
+```
+
 ### 2017-07-19
 1. `docker exec -it e983332 /bin/bash` 在运行的容器中执行命令
 2. `docker exec -i -t  mynginx /bin/bash` 在运行的容器中执行命令
