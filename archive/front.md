@@ -1,5 +1,10 @@
 ### Node 相关知识笔记
 
+### 2018-6-4
+#### qs 处理 get 的 url 参数
+- qs.stringify(data, {addQueryPrefix: true, encode: false, skipNulls: true});
+- 更多 qs 用法 https://www.npmjs.com/package/qs
+
 ### 2017-07-23
 #### JS 压缩与混淆
 >JavaScript parser / mangler / compressor / beautifier toolkit http://lisperator.net/uglifyjs/
