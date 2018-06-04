@@ -12,6 +12,17 @@ docker run -d -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD="yes" mysql:5.7
 mysql -uroot -h127.0.0.1 -P3306
 ```
 
+### 2018-04-28
+#### 导出与导入 container
+1. `docker export 75b9be9d4b1a > centos.tar` 导出
+2. `cat centos.tar | docker import - test/centos:v0.1` 导入
+
+#### 启动已终止 container （黑科技啊！）
+0. `docker ps -a`  找到要启动的 container
+1. `docker container start 75b9be9d4b1a` (这个container Id是之前run好的，一定要记住)
+2. `docker exec -it 75b9be9d4b1a bash`
+3. `source ~/.bash_profile` (执行这句才能使用node，不解)
+
 ### 2017-07-19
 1. `docker exec -it e983332 /bin/bash` 在运行的容器中执行命令
 2. `docker exec -i -t  mynginx /bin/bash` 在运行的容器中执行命令
